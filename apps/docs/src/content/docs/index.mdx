@@ -1,0 +1,83 @@
+---
+title: HQ — Personal OS for AI Workers
+description: Build your AI team. Ship projects autonomously. Never lose context.
+template: splash
+hero:
+  tagline: Build your AI team. Ship projects autonomously. Never lose context.
+  actions:
+    - text: Get Started
+      link: /guide/2-getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/indigoai-us/hq
+      icon: external
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Install in 30 seconds
+
+```bash
+npx create-hq
+cd hq && claude
+/setup
+```
+
+---
+
+<CardGrid stagger>
+  <Card title="Product Guide" icon="open-book">
+    What HQ is, how it works, and how to use every command and worker.
+    [Read the guide →](/guide/1-what-is-hq/)
+  </Card>
+  <Card title="Architecture" icon="setting">
+    Technical deep-dive into the monorepo, cloud sync engine, infrastructure, and
+    API. [Explore architecture →](/architecture/1-overview/)
+  </Card>
+  <Card title="Development" icon="laptop">
+    Local setup, deploying infrastructure, publishing packages, and contributing.
+    [Dev guide →](/development/1-local-setup/)
+  </Card>
+  <Card title="Roadmap" icon="rocket">
+    What's next for HQ — v5 launch specs, cloud sync GA, and future features.
+    [See roadmap →](/roadmap/1-overview/)
+  </Card>
+</CardGrid>
+
+---
+
+## What's in the box
+
+| Component | Description |
+|-----------|-------------|
+| **39+ Commands** | Session management, workers, projects, content, system, and more |
+| **28+ AI Workers** | Dev team, content team, social team, PR team, QA, security, and more |
+| **44+ Skills** | Specialized capabilities across the full skill tree |
+| **132+ Policies** | Learned rules, safety guardrails, and workflow enforcement |
+| **20+ Knowledge Bases** | Ralph methodology, security, design styles, testing, worker framework |
+| **3 Starter Projects** | Personal assistant, social media, code worker |
+| **Module System** | Keep your HQ updated with upstream changes |
+
+---
+
+## HQ vs HQ Cloud
+
+HQ is **free and open-source** (MIT). HQ Cloud adds managed infrastructure for teams and mobile access.
+
+| Feature | HQ (Free) | HQ Cloud (Paid) |
+|---------|:---------:|:----------------:|
+| All Claude Code commands | Yes | Yes |
+| AI workers & skills | Yes | Yes |
+| Knowledge bases & policies | Yes | Yes |
+| Session management & checkpoints | Yes | Yes |
+| qmd semantic search | Yes | Yes |
+| `npx create-hq` installer | Yes | Yes |
+| Module system & updates | Yes | Yes |
+| Cloud sync (S3) | -- | Yes |
+| Mobile PWA dashboard | -- | Yes |
+| Managed hosting | -- | Yes |
+| Team collaboration | -- | Roadmap |
+| Priority support | -- | Yes |
+
+[Compare HQ and HQ Cloud in detail →](/guide/hq-vs-hq-cloud/)
